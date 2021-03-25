@@ -22,13 +22,13 @@ def script():
     # what the user has guessed
 
     user_lives = input('EASY, MEDIUM, or HARD mode?: ').upper()
-    if user_lives = 'HARD':
+    if user_lives == 'HARD':
         lives = 6
 
-    elif user_lives = 'MEDIUM':
+    elif user_lives == 'MEDIUM':
         lives = 8
 
-    elif user_lives = 'EASY':
+    elif user_lives == 'EASY':
         lives = 12
 
     else:
