@@ -21,7 +21,7 @@ def script():
     used_letters = set() 
     # what the user has guessed
 
-    user_lives = input('EASY, MEDIUM, or HARD mode?: ').upper()
+    user_lives = input('SUPER EASY, EASY, MEDIUM, or HARD mode?: ').upper()
     if user_lives == 'HARD':
         lives = 6
 
@@ -30,7 +30,10 @@ def script():
 
     elif user_lives == 'EASY':
         lives = 12
-
+    
+    elif user_lives == 'SUPER EASY':
+        lives = 18
+        
     else:
         print('Invalid.')
         lives = 0
@@ -69,9 +72,9 @@ def script():
 
 
     restart = input("Would you like to play again? YES or NO: ").upper()
-    if restart == "YES" or 'Y':
+    if restart == "YES" or restart == 'Y':
         script()
-    elif restart == "NO" or 'N':
+    elif restart == "NO" or restart == 'N':
         print("Goodbye.")
     else:
         print('Invalid character. Goodbye.')
