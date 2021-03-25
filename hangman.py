@@ -72,10 +72,10 @@ def script():
         print('Congrats you guessed the word,', word, '!')
 
 
-    restart = input("Would you like to play again? YES or NO: ")
-    if restart == "YES":
+    restart = input("Would you like to play again? YES or NO: ").upper()
+    if restart == "YES" or 'Y':
         script()
-    elif restart == "NO":
+    elif restart == "NO" or 'N':
         print("Goodbye.")
     else:
         print('Invalid character. Goodbye.')
