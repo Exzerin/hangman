@@ -73,9 +73,9 @@ def script():
 
 
     restart = input("Would you like to play again? YES or NO: ")
-    if restart == "YES" or restart == "Y":
+    if restart == "YES":
         script()
-    if restart == "NO" or restart == "N":
+    elif restart == "NO":
         print("Goodbye.")
     else:
         print('Invalid character. Goodbye.')
