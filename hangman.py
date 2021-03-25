@@ -21,18 +21,14 @@ def script():
     used_letters = set() 
     # what the user has guessed
 
-    lives_hard = ('HARD')
-    lives_medium = ('MEDIUM')
-    lives_easy = ('EASY')
-
-    user_lives = input('EASY, MEDIUM, or HARD mode?: ')
-    if user_lives == lives_hard:
+    user_lives = input('EASY, MEDIUM, or HARD mode?: ').upper()
+    if user_lives = 'HARD':
         lives = 6
 
-    elif user_lives == lives_medium:
+    elif user_lives = 'MEDIUM':
         lives = 8
 
-    elif user_lives == lives_easy:
+    elif user_lives = 'EASY':
         lives = 12
 
     else:
